@@ -10,7 +10,7 @@ const client = new Client()
 const database = new Databases(client);
 
 export const saveMovie = async (movie:any)=>{
-    try{
+    try{ 
         const result = await database.listDocuments(database_id,saved_collection_id,[
             Query.equal('movie_id',movie?.id)
         ])
@@ -22,7 +22,8 @@ export const saveMovie = async (movie:any)=>{
             await database.createDocument(database_id,saved_collection_id,ID.unique(),{
                 movie_id:movie.id,
                 title: movie.title,
-                poster_url: movie.poster_path
+                poster_path: movie.poster_path,
+                vote_average:movie.vote_average
             })
         }
 

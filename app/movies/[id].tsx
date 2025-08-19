@@ -79,15 +79,15 @@ const MovieDetails = () => {
             value={movie?.genres?.map((g) => g.name).join("-") || "N/A"}
           />
           <View className="flex-row justify-between w-1/2">
-            {movie?.budget && movie?.revenue && (
+            {movie?.budget!=null && movie?.revenue!=null && (
               <>
                 <MovieInfo
                   label="Budget"
-                  value={`$${movie?.budget / 1_000_000} million`}
+                  value={`$${movie?.budget / 1_000_000} mil`}
                 />
                 <MovieInfo
                   label="Revenue"
-                  value={`$${Math.round(movie?.revenue) / 1_000_000}`}
+                  value={`$${Math.round(movie?.revenue) / 1_000_000} mil`}
                 />
               </>
             )}
