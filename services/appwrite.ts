@@ -37,7 +37,7 @@ export const updateSearchCount = async( query:string, movie:any)=>{
 
     try{
         const result = await database.listDocuments(database_id,collection_id, [
-            Query.equal('searchTerm',query)
+            Query.equal('movie_id',movie.id)
         ])
         if(result.documents.length>0){
             const existingMovie = result.documents[0];
@@ -53,7 +53,7 @@ export const updateSearchCount = async( query:string, movie:any)=>{
                 searchTerm: query,
                 movie_id: movie.id,
                 count:1,
-                poster_url:`hhtps://image.tmbd.org/t/p/w500${movie.poster_path}`,
+                poster_url:`https://image.tmdb.org/t/p/w500${movie.poster_path}`,
                 title:movie.title
             })
         }
