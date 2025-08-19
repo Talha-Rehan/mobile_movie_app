@@ -25,6 +25,28 @@ export const fetchMovies = async({query}:{query:string})=>{
 
 }
 
+export const fetchMovieDetails= async (movieId:string): Promise<MovieDetails>=>{
+    try{
+        const response = await fetch(`${TMBD_CONFIG.BASE_URL}/movie/${movieId}?api_key=${TMBD_CONFIG.API_KEY}`, {
+            method: 'GET',
+            headers: TMBD_CONFIG.headers
+        })
+
+        if(!response.ok) 
+            throw new Error('Failed to fetch movie detail')
+        const data = await response.json();
+
+        return data
+        
+    }
+    catch(err)
+    {
+        console.log(err)
+        throw err
+    }
+
+}
+
 // const url = 'https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=en-US&page=1&sort_by=popularity.desc';
 // const options = {
 //   method: 'GET',
