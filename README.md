@@ -118,7 +118,7 @@ Contributions are welcome! Please follow these steps:
 
 **Talha Rehan**  
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white)](https://github.com/Talha-Rehan)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](www.linkedin.com/in/talha-rehan-120b7b2a6)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/talha-rehan-120b7b2a6)
 
 ---
 
