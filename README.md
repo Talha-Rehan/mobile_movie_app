@@ -5,14 +5,13 @@
 CineTrack is a cross-platform mobile application built with React Native (Expo) that lets users explore movies, dive into detailed info, save favorites, and discover what's trending across the entire user base.
 
 ---
+ ## 📱 Screenshots
 
-## 📱 Screenshots
-
-> ![WhatsApp Image 2026-03-07 at 2 18 17 AM](https://github.com/user-attachments/assets/1e6ba6d1-9011-4a15-a99f-b72a1fdc51b2)![WhatsApp Image 2026-03-07 at 2 18 18 AM](https://github.com/user-attachments/assets/a9e9753a-a7c8-49ef-8b4d-f6be3f7a6fc7)![WhatsApp Image 2026-03-07 at 2 18 18 AM2](https://github.com/user-attachments/assets/06103ddd-760f-4d14-8269-c8aaa15ffc05)
-![WhatsApp Image 2026-03-07 at 2 18 18 AM3](https://github.com/user-attachments/assets/cf315f8c-63d5-4f22-a027-a3212f809d8a)
-
-
-
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/1e6ba6d1-9011-4a15-a99f-b72a1fdc51b2" width="250"/>
+  <img src="https://github.com/user-attachments/assets/a9e9753a-a7c8-49ef-8b4d-f6be3f7a6fc7" width="250"/>
+  <img src="https://github.com/user-attachments/assets/06103ddd-760f-4d14-8269-c8aaa15ffc05" width="250"/>
+</p>
 
 ---
 
