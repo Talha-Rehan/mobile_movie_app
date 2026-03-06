@@ -1,21 +1,21 @@
-# 🎬 MovieApp
+# 🎬 CineTrack
 
-> **Discover, search, and save your favorite movies — powered by real-time IMDB data.**
+> **Discover, search, and save your favorite movies — powered by real-time TMDB data.**
 
-MovieApp is a cross-platform mobile application built with React Native (Expo) that lets users explore movies, dive into detailed info, save favorites, and discover what's trending across the entire user base.
+CineTrack is a cross-platform mobile application built with React Native (Expo) that lets users explore movies, dive into detailed info, save favorites, and discover what's trending across the entire user base.
 
 ---
 
 ## 📱 Screenshots
 
-> *Add your app screenshots here*
+> 
 
 ---
 
 ## ✨ Features
 
-- **🎥 Popular Movies Feed** — Browse a curated list of currently popular movies fetched live from the IMDB API
-- **🔍 Keyword Search** — Search any movie by title with instant results pulled from IMDB
+- **🎥 Popular Movies Feed** — Browse a curated list of currently popular movies fetched live from the TMDB API
+- **🔍 Keyword Search** — Search any movie by title with instant results pulled from TMDB
 - **📋 Movie Detail Page** — Full movie profile including rating, genres, cast, synopsis, and more
 - **❤️ Favorites** — Save movies locally and revisit them anytime from your personal favorites screen
 - **🔥 Trending / Hottest Movies** — Tracks the most-searched movies across all users in real time, surfacing what everyone is watching
@@ -32,7 +32,7 @@ MovieApp is a cross-platform mobile application built with React Native (Expo) t
 
 ### Backend & Data
 ![Appwrite](https://img.shields.io/badge/Appwrite-F02E65?style=for-the-badge&logo=appwrite&logoColor=white)
-![IMDB API](https://img.shields.io/badge/IMDB_API-F5C518?style=for-the-badge&logo=imdb&logoColor=black)
+![TMDB API](https://img.shields.io/badge/TMDB_API-01B4E4?style=for-the-badge&logo=themoviedatabase&logoColor=white)
 
 ---
 
@@ -44,7 +44,7 @@ MovieApp is a cross-platform mobile application built with React Native (Expo) t
 - Expo CLI (`npm install -g expo-cli`)
 - [Expo Go](https://expo.dev/go) app on your phone, or an Android/iOS emulator
 - Appwrite account with a project set up
-- IMDB API key (via [RapidAPI](https://rapidapi.com/apidojo/api/imdb8))
+- TMDB API key — get one free at [themoviedb.org](https://www.themoviedb.org/settings/api)
 
 ### Installation
 
@@ -63,7 +63,22 @@ npm install --save @react-native-masked-view/masked-view
 npm install react-native-appwrite
 ```
 
-**3. Start the development server**
+**3. Configure environment variables**
+
+Create a `.env` file in the root directory:
+
+```env
+# TMDB Configuration
+EXPO_PUBLIC_API_KEY=
+
+# Appwrite Configuration
+EXPO_PUBLIC_APPWRITE_PROJECT_ID=
+EXPO_PUBLIC_APPWRITE_DATABASE_ID=
+EXPO_PUBLIC_APPWRITE_COLLECTION_ID=
+EXPO_PUBLIC_APPWRITE_COLLECTION_TWO_ID=
+```
+
+**4. Start the development server**
 
 ```bash
 npx expo start
@@ -76,10 +91,11 @@ Then open the app using one of:
 
 ---
 
+
 ## 🔌 How It Works
 
-### Movie Data — IMDB API
-All movie content (popular lists, search results, detail pages) is fetched from the IMDB API via RapidAPI. Each movie detail page surfaces ratings, genres, cast members, runtime, synopsis, and more.
+### Movie Data — TMDB API
+All movie content (popular lists, search results, detail pages) is fetched from the [TMDB API](https://www.themoviedb.org/documentation/api). Each movie detail page surfaces ratings, genres, cast members, runtime, synopsis, and more.
 
 ### Favorites — Local + Appwrite
 Users can save any movie to their favorites list. Saved movies are persisted through Appwrite's database, making them available across sessions.
@@ -100,6 +116,7 @@ Contributions are welcome! Please follow these steps:
 5. Open a Pull Request
 
 ---
+
 
 ## 👤 Author
 
