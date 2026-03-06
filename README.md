@@ -74,8 +74,6 @@ Then open the app using one of:
 - 🤖 **Android Emulator** — press `a` in the terminal
 - 🍎 **iOS Simulator** — press `i` in the terminal
 
-```
-
 ---
 
 ## 🔌 How It Works
