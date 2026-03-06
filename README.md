@@ -51,14 +51,7 @@ CineTrack is a cross-platform mobile application built with React Native (Expo) 
 
 ### Installation
 
-**1. Clone the repository**
-
-```bash
-git clone https://github.com/your-username/cinetrack.git
-cd cinetrack
-```
-
-**2. Install dependencies**
+**1. Install dependencies**
 
 ```bash
 npm install
@@ -66,7 +59,7 @@ npm install --save @react-native-masked-view/masked-view
 npm install react-native-appwrite
 ```
 
-**3. Configure environment variables**
+**2. Configure environment variables**
 
 Create a `.env` file in the root directory:
 
@@ -81,7 +74,7 @@ EXPO_PUBLIC_APPWRITE_COLLECTION_ID=
 EXPO_PUBLIC_APPWRITE_COLLECTION_TWO_ID=
 ```
 
-**4. Start the development server**
+**3. Start the development server**
 
 ```bash
 npx expo start
